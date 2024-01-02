@@ -1,0 +1,39 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face  {
+    font-family: 'Nsans Light';
+    src: url('./assets/NetflixSans-Light.woff2');
+}
+@font-face  {
+    font-family: 'Nsans Regular';
+    src: url('./assets/NetflixSans-Regular.woff2');
+}
+@font-face  {
+    font-family: 'Nsans Medium';
+    src: url('./assets/NetflixSans-Medium.woff2');
+}
+@font-face  {
+    font-family: 'Nsans Bold';
+    src: url('./assets/NetflixSans-Bold.woff2');
+}
+body{
+    font-family: 'Nsans Regular','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bg-light-gray{
+    @apply bg-gray-300 bg-opacity-20
+}
+.btn--banner{
+   @apply text-white outline-none border-none font-bold rounded py-1 px-2 mr-3
+}
+.btn-hover{
+    @apply hover:text-black hover:bg-gray-200
+}
+.row-poster{
+   @apply max-h-[250px] w-80 mr-4 cursor-pointer transform transition-transform hover:scale-110 ease-in-out duration-300
+}
+.row-poster-small{
+    @apply max-h-[100px] w-80 mr-4 cursor-pointer hover:transform transform transition-transform hover:scale-110 ease-in-out duration-300
+}
